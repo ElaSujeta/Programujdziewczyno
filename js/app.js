@@ -1,19 +1,31 @@
-console.log("działa!");
-var myName="Ela";
-console.log(myName);
 
-var friends =['Agata', 'Ela', 'Ewa', 'Natalia'];
 
-console.log(friends[1]);
+'use strict';
 
-var a = 5;
-var b = 12;
-if (a > b) {
-    console.log("hurra!");
-} else{
-    console.log("pierwsza mniejsza od drugiej");
-}
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("działa")
+    
+    //Dropdown menu in navigation
+    
+    var elementWithDropdown = document.querySelector('.for-dropdown');
+    
+    //console.log(elementWithDropdown);
+    
+    var dropdown = document.querySelector('.dropdown');
+    
+    //console.log(dropdown);
+    
+    elementWithDropdown.addEventListener('mouseover', function() {
+       //console.log('myszka jest tu');
+       
+       dropdown.style.display = "block";
+    });
+    
+    elementWithDropdown.addEventListener('mouseout', function() {
+        
+        dropdown.style.display = "none";
+    });
+    
+   
+    });
 
-for(var i=0; i <= friends.length-1; i++) {
-    console.log(friends[i]);
-}
